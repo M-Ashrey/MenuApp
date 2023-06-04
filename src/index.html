@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>MenuApp</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <form id="uploadForm">
+      <div>
+        <label for="nameField">Name:</label>
+        <input type="text" id="nameField" required>
+      </div>
+    
+      <div>
+        <label id="imageField" for="imageInput">Drag & Drop image file here (.dds)</label>
+        <input type="hidden" id="imageInput" required>
+      </div>
+    
+      <div>
+        <label id="musicField" for="musicInput">Drag & Drop music file here (.xwm or .wav)</label>
+        <input type="hidden" id="musicInput" required>
+      </div>
+    
+      <div>
+        <label for="directoryField">Directory:</label>
+        <button type="button" id="directoryField" required>Choose a directory</button>
+      </div>
+    
+      <button type="submit">Make</button>
+    </form>
+  
+    <script src="renderer.js"></script>
+  </body>
+</html>
