@@ -9,17 +9,21 @@
     <form id="uploadForm">
       <div>
         <label for="nameField">Name:</label>
-        <input type="text" id="nameField" required>
+        <input type="text" placeholder="if left empty dds name will be used" id="nameField">
       </div>
     
       <div>
-        <label id="imageField" for="imageInput">Drag & Drop image file here (.dds)</label>
-        <input type="hidden" id="imageInput" required>
+        <label id="imageField" for="imageInput">Image: Drag & Drop or</label>
+        <button type="button" id="browseImage">Browse</button>
+        <input type="hidden" id="imageInput">
+        <button type="button" id="clearImage" style="display: none;">X</button>
       </div>
     
       <div>
-        <label id="musicField" for="musicInput">Drag & Drop music file here (.xwm or .wav)</label>
-        <input type="hidden" id="musicInput" required>
+        <label id="musicField" for="musicInput">Music: Drag & Drop or</label>
+        <button type="button" id="browseMusic">Browse</button>
+        <input type="hidden" id="musicInput">
+        <button type="button" id="clearMusic" style="display: none;">X</button>
       </div>
     
       <div>
@@ -27,7 +31,7 @@
         <button type="button" id="directoryField" required>Choose a directory</button>
       </div>
     
-      <button type="submit">Make</button>
+      <button type="submit" id="submitButton">Make</button>
     </form>
   
     <script src="renderer.js"></script>
