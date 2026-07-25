@@ -90,3 +90,11 @@ typings/
 
 # Electron-Forge
 out/
+
+# Generic build/vendor dirs (not currently used by this project, kept for safety)
+dist/
+build/
+vendor/
+
+# Per-machine app settings written at runtime (last-used directory picker path)
+settings.json

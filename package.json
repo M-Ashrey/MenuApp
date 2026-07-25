@@ -2,7 +2,7 @@
   "name": "menuapp",
   "productName": "menuapp",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Packages a custom image and music file into the folder structure a Skyrim main-menu-replacer mod needs.",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
